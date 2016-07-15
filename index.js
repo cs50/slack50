@@ -48,22 +48,20 @@ app.post('/store', (req, res) => {
       getConnectedLights()
       .then(json => {
         Object.keys(json).forEach(id => {
-          setLight(id, {
-            on: true,
-          });
+          setLight(id, { on: true });
         });
       });
-      return res.send('Lights turned on!');
+      return res.send('Turned on!');
     }
 
     case 'off': {
       getConnectedLights()
       .then(json => {
         Object.keys(json).forEach(id => {
-          setLight(id, false);
+          setLight(id, { on: false });
         });
       });
-      return res.send('You turned off the lights!');
+      return res.send('Turned off!');
     }
 
     case 'party': {
@@ -82,18 +80,21 @@ app.post('/store', (req, res) => {
       return res.send('Party started :tada:');
     }
 
-    case 'color': {
+    case 'red':
+    case 'green':
+    case 'blue':
+    case 'white': {
       getConnectedLights()
       .then(json => Object.keys(json).forEach(id => {
         setLight(id, {
-          color: colors[req.body.text.split(' ')[1]],
+          color: colors[req.body.text.split(' ')[0]],
         });
       }));
-      return res.send(`Color changed to ${req.body.text.split(' ')[1]}`);
+      return res.send(`Color changed to ${req.body.text.split(' ')[0]}`);
     }
 
     default: {
-      return res.send('Usage: /lights [on, off, party, color <red, green, blue, white>]');
+      return res.send('Usage: /lights [on, off, party, red, green, blue, white]');
     }
 
   }

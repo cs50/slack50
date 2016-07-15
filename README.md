@@ -8,5 +8,5 @@ Control your [Philips Hue Lights](www2.meethue.com/) using [Slack](https://api.s
 /lights on
 /lights off
 /lights party
-/lights color [red, green, blue, white]
+/lights [red, green, blue, white]
 ```
