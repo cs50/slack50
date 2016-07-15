@@ -1,0 +1,35 @@
+{
+  "name": "lights",
+  "version": "0.0.1",
+  "description": "Control Philips Hue lights through Slack commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.3",
+    "node-fetch": "^1.5.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cs50/lights"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "slack"
+  ],
+  "author": "Luke Jackson & Tobias Büschel",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.1",
+    "eslint-plugin-import": "^1.10.3"
+  }
+}

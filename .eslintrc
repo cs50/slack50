@@ -1,0 +1,6 @@
+{
+  extends: "airbnb-base",
+  rules: {
+    padded-blocks: ["error", { "classes": "never" }]
+  }
+}
