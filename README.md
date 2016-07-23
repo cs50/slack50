@@ -10,5 +10,10 @@
 
 
 ## Quotebot
+> Collect and share quotes of your coworkers using this [Slack bot](https://api.slack.com/bot-users).
+
+
+![quotebot](/quotebot/quotebot.gif)
+
 
 ## Sonosbot
