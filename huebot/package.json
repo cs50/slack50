@@ -1,5 +1,5 @@
 {
-  "name": "lights",
+  "name": "huebot",
   "version": "0.0.1",
   "description": "Control Philips Hue lights through Slack commands",
   "main": "index.js",
