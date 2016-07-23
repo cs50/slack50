@@ -20,3 +20,10 @@ Find a quote via:
 
 A random quote in the database by NAME will be returned in Slack. If no quotes match the query, the quote bot will tell you that the person has no quotes.
 
+Prompt a random quote via:
+
+```
+/quotelist
+```
+
+which returns a random quote.
