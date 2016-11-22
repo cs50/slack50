@@ -14,19 +14,16 @@ Control your [Philips Hue Lights](www2.meethue.com/) using [Slack](https://api.s
 - [Tobias Büschel](https://github.com/tobiasbueschel)
 - [Luke Jackson](https://github.com/lukejacksonn)
 
+## Troubleshooting
 
-
-##Troubleshooting
-
-Ensure Raspberry Pi is turned on and connected to the Internet
+Ensure Raspberry Pi is turned on and connected to the Internet.
 
 Run `node ~/Desktop/cs50/huebot/index.js`
 
-In a new Terminal window, run `ngrok http 8080`
-[img](http://imgur.com/nzN9PLC)
+In a new Terminal window, run `ngrok http 8080`.
+![ngrok-status](http://imgur.com/nzN9PLC.jpeg)
 
-Visit https://cs50.slack.com/services/B1RUW0AHX
+Visit **https://{Your-Slack-Team}.slack.com/apps/manage/custom-integrations** and open **Custom Integrations**.
 
-Ensure integration settings url is = ngrok url
-[img](http://imgur.com/YLe6TyY)
-
+Ensure that your Slack Custom Integration uses the URL you have received from ngrok.
+![slack-settings](http://imgur.com/YLe6TyY.jpeg)
